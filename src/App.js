@@ -1,13 +1,12 @@
 import './App.css';
+import Activity from './Components/Activity/Activity';
 import Header from './Components/Header/Header';
 
 function App() {
   return (
     <div className='bg-[#F3F2EF]'>
       <Header />
-      <div className='px-2 pt-2'>
-        <h2>Activity</h2>
-      </div>
+      <Activity/>
       <div className='px-2 pt-2'>
         <h2>Blogs</h2>
       </div>

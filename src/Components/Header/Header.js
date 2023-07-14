@@ -2,6 +2,7 @@ import React from 'react';
 import CoverPhoto from '../../image/cover-photo.jpeg'
 import ProfilePhoto from '../../image/profile-photo.jpeg'
 import BlogOne from '../../image/Blog/blog-one.png'
+import { BsFillCalendarCheckFill } from 'react-icons/bs';
 
 const Header = () => {
     return (
@@ -33,6 +34,15 @@ const Header = () => {
             </div>
 
             <div className='w-1/4'>
+                <div className='bg-white rounded-md shadow-md mb-2'>
+                    <div className='px-2 pt-1 text-center'>
+                        <h2 className='font-semibold'>Meet With Me</h2>
+                        <p className='text-xs text-gray-500'>30 mins, One-on-One</p>
+                        <div className='pt-5 pb-2'>
+                            {/* <a className='text-sky-500 pt-' href="https://www.facebook.com" target="_blank">View booking page</a> */}
+                        </div>
+                    </div>
+                </div>
                 <div className='bg-white rounded-md shadow-md pb-5'>
                     <img className='rounded-md' src={BlogOne} alt="" />
                     <div className='mx-2'>
@@ -41,11 +51,6 @@ const Header = () => {
                     </div>
                     <div className='pt-3 mx-2'>
                         <p className='text-sm'>Author: Abdullah Al Habib</p>
-                    </div>
-                </div>
-                <div className='bg-white rounded-md shadow-md pb-5 mt-2'>
-                    <div className='px-2 pt-2'>
-                        <h2>Meet With Me</h2>
                     </div>
                 </div>
             </div>
