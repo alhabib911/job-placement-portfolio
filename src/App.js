@@ -1,36 +1,26 @@
 import './App.css';
 import Activity from './Components/Activity/Activity';
+import Blog from './Components/Bologs/Blog';
+import Certificate from './Components/Certificate/Certificate';
+import Course from './Components/Course/Course';
+import Education from './Components/Education/Education';
 import Header from './Components/Header/Header';
+import JobExperience from './Components/JobExperience/JobExperience';
+import Projects from './Components/Projects/Projects';
+import Skills from './Components/Skills/Skills';
 
 function App() {
   return (
     <div className='bg-[#F3F2EF]'>
       <Header />
-      <Activity/>
-      <div className='px-2 pt-2'>
-        <h2>Blogs</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>Job Experience</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>It Skills</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>Soft Skills</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>Web Development Projects</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>Education</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>Course</h2>
-      </div>
-      <div className='px-2 pt-2'>
-        <h2>Certificates</h2>
-      </div>
+      <Activity />
+      <JobExperience />
+      <Skills />
+      <Projects />
+      <Education />
+      <Course />
+      <Certificate />
+      <Blog />
     </div>
   );
 }

@@ -2,11 +2,12 @@ import React from 'react';
 import CoverPhoto from '../../image/cover-photo.jpeg'
 import ProfilePhoto from '../../image/profile-photo.jpeg'
 import BlogOne from '../../image/Blog/blog-one.png'
-import { BsFillCalendarCheckFill } from 'react-icons/bs';
+import { FaHome } from 'react-icons/fa';
+import { MdWork, MdWorkOff } from 'react-icons/md';
 
 const Header = () => {
     return (
-        <div className='mx-20 flex gap-5 pt-5'>
+        <div className='mx-14 flex gap-5 pt-5'>
             <div className='w-3/4 bg-white shadow-md rounded-md '>
                 <div className='absolute flex'>
                     <div className='w-8/12'>
@@ -35,7 +36,7 @@ const Header = () => {
 
             <div className='w-1/4'>
                 <div className='bg-white rounded-md shadow-md mb-2'>
-                    <div className='px-2 pt-1 text-center'>
+                    <div className='px-2 pt-6 text-center'>
                         <h2 className='font-semibold'>Meet With Me</h2>
                         <p className='text-xs text-gray-500'>30 mins, One-on-One</p>
                         <div className='pt-5 pb-2'>
@@ -43,14 +44,39 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white rounded-md shadow-md pb-5'>
-                    <img className='rounded-md' src={BlogOne} alt="" />
-                    <div className='mx-2'>
-                        <h2 className='font-semibold text-lg pt-2'>Lorem ipsum dolor sit amet.</h2>
-                        <p className='pt-2 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur quae. Consequatur.</p>
+                <div className='bg-white rounded-md shadow-md py-5 px-4'>
+                    <h2>Intro</h2>
+                    <div className='flex items-center gap-3'>
+                        <FaHome/>
+                        <p>Lives in <span className='font-medium'>Dhaka, Bangladesh</span></p>
                     </div>
-                    <div className='pt-3 mx-2'>
-                        <p className='text-sm'>Author: Abdullah Al Habib</p>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWork/></p>
+                        <p> Job placement Executive at <span className='font-medium'>Programming Hero</span></p>
+                    </div>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWorkOff/></p>
+                        <p> Former Job Placements Intern at <span className='font-medium'>Programming Hero</span></p>
+                    </div>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWorkOff/></p>
+                        <p> Former senior executive at <span className='font-medium'>Evaly.com.bd</span></p>
+                    </div>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWorkOff/></p>
+                        <p> Worked at <span className='font-medium'>BLUE HORN</span></p>
+                    </div>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWorkOff/></p>
+                        <p> Former Assistant Operator at <span className='font-medium'>Daraz Online Shopping</span></p>
+                    </div>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWorkOff/></p>
+                        <p> Former Assistant Manager at <span className='font-medium'>Bilpicka.com</span></p>
+                    </div>
+                    <div className='flex items-start pt-3 gap-3'>
+                        <p className='pt-1'><MdWorkOff/></p>
+                        <p> Former Business Development Executive at <span className='font-medium'>Motion View</span></p>
                     </div>
                 </div>
             </div>
